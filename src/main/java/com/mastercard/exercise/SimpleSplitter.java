@@ -11,7 +11,7 @@ public class SimpleSplitter implements Splitter {
 
   public Result parse() {
 
-    if (source == null) {
+    if (source == null || source.equals("")) {
       return new Result(0, null);
     }
 
